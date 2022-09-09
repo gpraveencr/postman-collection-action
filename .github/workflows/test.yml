@@ -22,7 +22,7 @@ jobs:
       - uses: ./
         with:
           postmanApiKey: ${{ secrets.postmanApiKey }}
-          postmanWorkspaceId: 0f41daa6-c9a7-49d9-8455-707e2f46da22
+          postmanWorkspaceId: 171273-f695cab7-6878-eb55-7943-ad88e1ccfd65
           postmanTimeout: 30000
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
