@@ -101,7 +101,7 @@ async function run(): Promise<void> {
 
 async function loadRemotePostmanCollections(): Promise<void> {
   try {
-    const {data} = await restClient.get('/collections')
+    const {data} = await restClient.get('/collections?workspace=${postmanWorkspaceId}')
     for (const remoteCollection of data.collections.filter(
       (collection: RemoteCollection) => !collection.fork
     )) {
