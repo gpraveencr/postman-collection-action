@@ -107,7 +107,9 @@ async function loadRemotePostmanCollections(): Promise<void> {
     )) {
       remotePostmanCollectionsMap.set(remoteCollection.id, remoteCollection)
     }
-
+    core.info(
+      `URL: /collections?workspace=${postmanWorkspaceId}`
+    )
     core.info(
       `${remotePostmanCollectionsMap.size} Non-Forked Collection(s) found for the given API Key in Remote Postman`
     )
